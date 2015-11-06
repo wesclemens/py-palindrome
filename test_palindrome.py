@@ -10,6 +10,8 @@ class TestPalindrome(unittest.TestCase):
         self.assertFalse(checker("abcd"))
     def test_odd_false(self):
         self.assertFalse(checker("abcde"))
+    def test_case_true(self):
+        self.assertTrue(checker("Abcba"))
 
 if '__main__' == __name__:
     unittest.main()
